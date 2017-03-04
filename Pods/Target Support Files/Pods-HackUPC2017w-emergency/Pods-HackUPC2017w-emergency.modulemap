@@ -1,0 +1,6 @@
+framework module Pods_HackUPC2017w_emergency {
+  umbrella header "Pods-HackUPC2017w-emergency-umbrella.h"
+
+  export *
+  module * { export * }
+}
