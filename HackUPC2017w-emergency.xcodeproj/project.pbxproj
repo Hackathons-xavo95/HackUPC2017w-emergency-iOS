@@ -581,6 +581,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = 3R6W93JCRA;
 				INFOPLIST_FILE = extension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "es.nom.xnet.HackUPC2017w-emergency.extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -595,6 +596,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = 3R6W93JCRA;
 				INFOPLIST_FILE = extension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "es.nom.xnet.HackUPC2017w-emergency.extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -643,7 +645,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -687,7 +689,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -714,6 +716,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/SWTableViewCell",
 				);
 				INFOPLIST_FILE = "HackUPC2017w-emergency/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "es.nom.xnet.HackUPC2017w-emergency";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -739,6 +742,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/SWTableViewCell",
 				);
 				INFOPLIST_FILE = "HackUPC2017w-emergency/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "es.nom.xnet.HackUPC2017w-emergency";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -814,6 +818,7 @@
 				075309931E6BE25E00EF959F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		076FE2811E62780800F4B7F3 /* Build configuration list for PBXProject "HackUPC2017w-emergency" */ = {
 			isa = XCConfigurationList;
