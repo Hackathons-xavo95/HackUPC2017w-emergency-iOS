@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  HackUPC2017w-emergency
+//  Assistant
 //
-//  Created by usuari on 26/2/17.
+//  Created by usuari on 3/2/17.
 //  Copyright © 2017 XFrostLabs. All rights reserved.
 //
 
@@ -15,7 +15,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Initialize the window
+        window = UIWindow.init(frame: UIScreen.main.bounds)
+        
+        // Set Background Color of window
+        window?.backgroundColor = UIColor.white
+        
+        // Allocate memory for an instance of the 'MainViewController' class
+        let loginViewController = LoginViewController()
+        
+        // Set the navigation controller
+        let navController = UINavigationController(rootViewController: loginViewController)
+        
+        // Set the root view controller of the app's window
+        window!.rootViewController = navController
+        
+        // Make the window visible
+        window!.makeKeyAndVisible()
+        
         return true
     }
 

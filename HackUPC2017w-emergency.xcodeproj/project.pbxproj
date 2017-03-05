@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		076FE28A1E62780900F4B7F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076FE2891E62780900F4B7F3 /* AppDelegate.swift */; };
-		076FE28C1E62780900F4B7F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076FE28B1E62780900F4B7F3 /* ViewController.swift */; };
-		076FE28F1E62780900F4B7F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076FE28D1E62780900F4B7F3 /* Main.storyboard */; };
+		075309781E6BB54800EF959F /* GPSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075309761E6BB54800EF959F /* GPSViewController.swift */; };
+		075309791E6BB54800EF959F /* GPSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 075309771E6BB54800EF959F /* GPSViewController.xib */; };
+		0753097B1E6BB5FF00EF959F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0753097A1E6BB5FF00EF959F /* AppDelegate.swift */; };
+		0753097E1E6BD07300EF959F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0753097C1E6BD07300EF959F /* LoginViewController.swift */; };
+		0753097F1E6BD07300EF959F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0753097D1E6BD07300EF959F /* LoginViewController.xib */; };
+		075309861E6BE25E00EF959F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075309851E6BE25E00EF959F /* NotificationCenter.framework */; };
+		075309891E6BE25E00EF959F /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075309881E6BE25E00EF959F /* TodayViewController.swift */; };
+		0753098C1E6BE25E00EF959F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0753098A1E6BE25E00EF959F /* MainInterface.storyboard */; };
+		075309901E6BE25E00EF959F /* extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 075309841E6BE25E00EF959F /* extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		076FE2911E62780900F4B7F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 076FE2901E62780900F4B7F3 /* Assets.xcassets */; };
 		076FE2941E62780900F4B7F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076FE2921E62780900F4B7F3 /* LaunchScreen.storyboard */; };
 		076FE29F1E62780900F4B7F3 /* HackUPC2017w_emergencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076FE29E1E62780900F4B7F3 /* HackUPC2017w_emergencyTests.swift */; };
@@ -23,9 +29,17 @@
 		076FE2C51E6B3CEB00F4B7F3 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076FE2BD1E6B3CEA00F4B7F3 /* SwiftyJSON.framework */; };
 		076FE2C61E6B3CEB00F4B7F3 /* SWTableViewCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076FE2BE1E6B3CEA00F4B7F3 /* SWTableViewCell.framework */; };
 		934558A4F70DB7DDB95C97F6 /* Pods_HackUPC2017w_emergency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46D304DE25B305C08EFEE73 /* Pods_HackUPC2017w_emergency.framework */; };
+		EA4805ED195665DDE290D704 /* Pods_extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3D676578B1E02C66F85AEC /* Pods_extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0753098E1E6BE25E00EF959F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 076FE27E1E62780800F4B7F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 075309831E6BE25E00EF959F;
+			remoteInfo = extension;
+		};
 		076FE29B1E62780900F4B7F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 076FE27E1E62780800F4B7F3 /* Project object */;
@@ -42,11 +56,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		075309941E6BE25E00EF959F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				075309901E6BE25E00EF959F /* extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		075309761E6BB54800EF959F /* GPSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPSViewController.swift; sourceTree = "<group>"; };
+		075309771E6BB54800EF959F /* GPSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPSViewController.xib; sourceTree = "<group>"; };
+		0753097A1E6BB5FF00EF959F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0753097C1E6BD07300EF959F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0753097D1E6BD07300EF959F /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		075309841E6BE25E00EF959F /* extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		075309851E6BE25E00EF959F /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		075309881E6BE25E00EF959F /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		0753098B1E6BE25E00EF959F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0753098D1E6BE25E00EF959F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		076FE2861E62780900F4B7F3 /* HackUPC2017w-emergency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HackUPC2017w-emergency.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		076FE2891E62780900F4B7F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		076FE28B1E62780900F4B7F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		076FE28E1E62780900F4B7F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		076FE2901E62780900F4B7F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		076FE2931E62780900F4B7F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		076FE2951E62780900F4B7F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,12 +99,24 @@
 		076FE2BC1E6B3CEA00F4B7F3 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = "Pods/../build/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework"; sourceTree = "<group>"; };
 		076FE2BD1E6B3CEA00F4B7F3 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		076FE2BE1E6B3CEA00F4B7F3 /* SWTableViewCell.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWTableViewCell.framework; path = "Pods/../build/Debug-iphoneos/SWTableViewCell/SWTableViewCell.framework"; sourceTree = "<group>"; };
+		7A3D676578B1E02C66F85AEC /* Pods_extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		849ABF9166E2346494C4F3EE /* Pods-HackUPC2017w-emergency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackUPC2017w-emergency.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackUPC2017w-emergency/Pods-HackUPC2017w-emergency.release.xcconfig"; sourceTree = "<group>"; };
 		96465F5D52A3B7627C6306FA /* Pods-HackUPC2017w-emergency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackUPC2017w-emergency.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackUPC2017w-emergency/Pods-HackUPC2017w-emergency.debug.xcconfig"; sourceTree = "<group>"; };
 		B46D304DE25B305C08EFEE73 /* Pods_HackUPC2017w_emergency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackUPC2017w_emergency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F028DEA3061EC98F273EC1B8 /* Pods-extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-extension/Pods-extension.release.xcconfig"; sourceTree = "<group>"; };
+		F68FDFE593359142CE12186E /* Pods-extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-extension/Pods-extension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		075309811E6BE25E00EF959F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075309861E6BE25E00EF959F /* NotificationCenter.framework in Frameworks */,
+				EA4805ED195665DDE290D704 /* Pods_extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		076FE2831E62780900F4B7F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,12 +150,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		075309871E6BE25E00EF959F /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				075309881E6BE25E00EF959F /* TodayViewController.swift */,
+				0753098A1E6BE25E00EF959F /* MainInterface.storyboard */,
+				0753098D1E6BE25E00EF959F /* Info.plist */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		076FE27D1E62780800F4B7F3 = {
 			isa = PBXGroup;
 			children = (
 				076FE2881E62780900F4B7F3 /* HackUPC2017w-emergency */,
 				076FE29D1E62780900F4B7F3 /* HackUPC2017w-emergencyTests */,
 				076FE2A81E62780900F4B7F3 /* HackUPC2017w-emergencyUITests */,
+				075309871E6BE25E00EF959F /* extension */,
 				076FE2871E62780900F4B7F3 /* Products */,
 				7FD7FD7CA7028D5A94CE4193 /* Pods */,
 				2169EDFC7C64C47E1DAAC033 /* Frameworks */,
@@ -121,6 +179,7 @@
 				076FE2861E62780900F4B7F3 /* HackUPC2017w-emergency.app */,
 				076FE29A1E62780900F4B7F3 /* HackUPC2017w-emergencyTests.xctest */,
 				076FE2A51E62780900F4B7F3 /* HackUPC2017w-emergencyUITests.xctest */,
+				075309841E6BE25E00EF959F /* extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,12 +187,14 @@
 		076FE2881E62780900F4B7F3 /* HackUPC2017w-emergency */ = {
 			isa = PBXGroup;
 			children = (
-				076FE2891E62780900F4B7F3 /* AppDelegate.swift */,
-				076FE28B1E62780900F4B7F3 /* ViewController.swift */,
-				076FE28D1E62780900F4B7F3 /* Main.storyboard */,
+				0753097A1E6BB5FF00EF959F /* AppDelegate.swift */,
+				0753097C1E6BD07300EF959F /* LoginViewController.swift */,
+				0753097D1E6BD07300EF959F /* LoginViewController.xib */,
 				076FE2901E62780900F4B7F3 /* Assets.xcassets */,
 				076FE2921E62780900F4B7F3 /* LaunchScreen.storyboard */,
 				076FE2951E62780900F4B7F3 /* Info.plist */,
+				075309761E6BB54800EF959F /* GPSViewController.swift */,
+				075309771E6BB54800EF959F /* GPSViewController.xib */,
 			);
 			path = "HackUPC2017w-emergency";
 			sourceTree = "<group>";
@@ -168,6 +229,8 @@
 				076FE2BD1E6B3CEA00F4B7F3 /* SwiftyJSON.framework */,
 				076FE2BE1E6B3CEA00F4B7F3 /* SWTableViewCell.framework */,
 				B46D304DE25B305C08EFEE73 /* Pods_HackUPC2017w_emergency.framework */,
+				075309851E6BE25E00EF959F /* NotificationCenter.framework */,
+				7A3D676578B1E02C66F85AEC /* Pods_extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,6 +240,8 @@
 			children = (
 				96465F5D52A3B7627C6306FA /* Pods-HackUPC2017w-emergency.debug.xcconfig */,
 				849ABF9166E2346494C4F3EE /* Pods-HackUPC2017w-emergency.release.xcconfig */,
+				F68FDFE593359142CE12186E /* Pods-extension.debug.xcconfig */,
+				F028DEA3061EC98F273EC1B8 /* Pods-extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -184,6 +249,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		075309831E6BE25E00EF959F /* extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 075309911E6BE25E00EF959F /* Build configuration list for PBXNativeTarget "extension" */;
+			buildPhases = (
+				B20A8BA065B2BC3867054F79 /* [CP] Check Pods Manifest.lock */,
+				075309801E6BE25E00EF959F /* Sources */,
+				075309811E6BE25E00EF959F /* Frameworks */,
+				075309821E6BE25E00EF959F /* Resources */,
+				2FBA7A9BBC7EA935030AF1C8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = extension;
+			productName = extension;
+			productReference = 075309841E6BE25E00EF959F /* extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		076FE2851E62780900F4B7F3 /* HackUPC2017w-emergency */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 076FE2AE1E62780900F4B7F3 /* Build configuration list for PBXNativeTarget "HackUPC2017w-emergency" */;
@@ -194,10 +278,12 @@
 				076FE2841E62780900F4B7F3 /* Resources */,
 				D9AC5165FC582A85466B745B /* [CP] Embed Pods Frameworks */,
 				DD02AB624A30C998760B3C95 /* [CP] Copy Pods Resources */,
+				075309941E6BE25E00EF959F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0753098F1E6BE25E00EF959F /* PBXTargetDependency */,
 			);
 			name = "HackUPC2017w-emergency";
 			productName = "HackUPC2017w-emergency";
@@ -250,6 +336,11 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = XFrostLabs;
 				TargetAttributes = {
+					075309831E6BE25E00EF959F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3R6W93JCRA;
+						ProvisioningStyle = Automatic;
+					};
 					076FE2851E62780900F4B7F3 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 3R6W93JCRA;
@@ -290,18 +381,28 @@
 				076FE2851E62780900F4B7F3 /* HackUPC2017w-emergency */,
 				076FE2991E62780900F4B7F3 /* HackUPC2017w-emergencyTests */,
 				076FE2A41E62780900F4B7F3 /* HackUPC2017w-emergencyUITests */,
+				075309831E6BE25E00EF959F /* extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		075309821E6BE25E00EF959F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0753098C1E6BE25E00EF959F /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		076FE2841E62780900F4B7F3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0753097F1E6BD07300EF959F /* LoginViewController.xib in Resources */,
 				076FE2941E62780900F4B7F3 /* LaunchScreen.storyboard in Resources */,
+				075309791E6BB54800EF959F /* GPSViewController.xib in Resources */,
 				076FE2911E62780900F4B7F3 /* Assets.xcassets in Resources */,
-				076FE28F1E62780900F4B7F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +423,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2FBA7A9BBC7EA935030AF1C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-extension/Pods-extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8CE923B4A6FE7AF0E5169F80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B20A8BA065B2BC3867054F79 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -370,12 +501,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		075309801E6BE25E00EF959F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075309891E6BE25E00EF959F /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		076FE2821E62780900F4B7F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				076FE28C1E62780900F4B7F3 /* ViewController.swift in Sources */,
-				076FE28A1E62780900F4B7F3 /* AppDelegate.swift in Sources */,
+				0753097E1E6BD07300EF959F /* LoginViewController.swift in Sources */,
+				0753097B1E6BB5FF00EF959F /* AppDelegate.swift in Sources */,
+				075309781E6BB54800EF959F /* GPSViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +538,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0753098F1E6BE25E00EF959F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 075309831E6BE25E00EF959F /* extension */;
+			targetProxy = 0753098E1E6BE25E00EF959F /* PBXContainerItemProxy */;
+		};
 		076FE29C1E62780900F4B7F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 076FE2851E62780900F4B7F3 /* HackUPC2017w-emergency */;
@@ -411,12 +556,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		076FE28D1E62780900F4B7F3 /* Main.storyboard */ = {
+		0753098A1E6BE25E00EF959F /* MainInterface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				076FE28E1E62780900F4B7F3 /* Base */,
+				0753098B1E6BE25E00EF959F /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 		076FE2921E62780900F4B7F3 /* LaunchScreen.storyboard */ = {
@@ -430,6 +575,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		075309921E6BE25E00EF959F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F68FDFE593359142CE12186E /* Pods-extension.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3R6W93JCRA;
+				INFOPLIST_FILE = extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "es.nom.xnet.HackUPC2017w-emergency.extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		075309931E6BE25E00EF959F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F028DEA3061EC98F273EC1B8 /* Pods-extension.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 3R6W93JCRA;
+				INFOPLIST_FILE = extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "es.nom.xnet.HackUPC2017w-emergency.extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		076FE2AC1E62780900F4B7F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -527,6 +700,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 96465F5D52A3B7627C6306FA /* Pods-HackUPC2017w-emergency.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3R6W93JCRA;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -551,6 +725,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 849ABF9166E2346494C4F3EE /* Pods-HackUPC2017w-emergency.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3R6W93JCRA;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -632,6 +807,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		075309911E6BE25E00EF959F /* Build configuration list for PBXNativeTarget "extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				075309921E6BE25E00EF959F /* Debug */,
+				075309931E6BE25E00EF959F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		076FE2811E62780800F4B7F3 /* Build configuration list for PBXProject "HackUPC2017w-emergency" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
